@@ -69,7 +69,7 @@ class TextProperties {
             }
         }
 
-        @Nonnull
+        
         @Override
         public String toString() {
             return alignment;
@@ -131,7 +131,7 @@ class TextProperties {
             }
         }
 
-        @Nonnull
+        
         @Override
         public String toString() {
             return weight;
@@ -172,7 +172,7 @@ class TextProperties {
             }
         }
 
-        @Nonnull
+        
         @Override
         public String toString() {
             return decoration;

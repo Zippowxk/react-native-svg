@@ -16,8 +16,6 @@ import android.graphics.Paint;
 import android.graphics.RectF;
 import android.view.View;
 
-import androidx.annotation.NonNull;
-
 import com.facebook.react.bridge.Dynamic;
 import com.facebook.react.bridge.ReactContext;
 import com.facebook.react.uimanager.annotations.ReactProp;
@@ -46,7 +44,7 @@ class ForeignObjectView extends GroupView {
     }
 
     @Override
-    public void onDescendantInvalidated(@NonNull View child, @NonNull View target) {
+    public void onDescendantInvalidated( View child,  View target) {
         super.onDescendantInvalidated(child, target);
         invalidate();
     }

@@ -48,13 +48,13 @@ class SvgViewManager extends ReactViewManager {
         return mTagToSvgView.get(tag);
     }
 
-    @Nonnull
+    
     @Override
     public String getName() {
         return REACT_CLASS;
     }
 
-    @Nonnull
+    
     @Override
     public SvgView createViewInstance(ThemedReactContext reactContext) {
         return new SvgView(reactContext);
@@ -67,7 +67,7 @@ class SvgViewManager extends ReactViewManager {
     }
 
     @Override
-    public void onDropViewInstance(@Nonnull ReactViewGroup view) {
+    public void onDropViewInstance( ReactViewGroup view) {
         super.onDropViewInstance(view);
         mTagToSvgView.remove(view.getId());
     }

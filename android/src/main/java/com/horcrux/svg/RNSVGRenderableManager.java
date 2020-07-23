@@ -30,14 +30,13 @@ import java.io.InputStreamReader;
 
 import javax.annotation.Nonnull;
 
-import static com.facebook.react.common.StandardCharsets.UTF_8;
 
 class RNSVGRenderableManager extends ReactContextBaseJavaModule {
     RNSVGRenderableManager(ReactApplicationContext reactContext) {
         super(reactContext);
     }
 
-    @Nonnull
+    
     @Override
     public String getName() {
         return "RNSVGRenderableManager";
@@ -246,7 +245,7 @@ class RNSVGRenderableManager extends ReactContextBaseJavaModule {
             int id = resources.getIdentifier(name, "raw", packageName);
             InputStream stream = resources.openRawResource(id);
             try {
-                InputStreamReader reader = new InputStreamReader(stream, UTF_8);
+                InputStreamReader reader = new InputStreamReader(stream, "utf-8");
                 char[] buffer = new char[DEFAULT_BUFFER_SIZE];
                 StringBuilder builder = new StringBuilder();
                 int n;

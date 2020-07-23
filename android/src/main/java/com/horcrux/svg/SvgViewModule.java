@@ -23,7 +23,7 @@ class SvgViewModule extends ReactContextBaseJavaModule {
         super(reactContext);
     }
 
-    @Nonnull
+    
     @Override
     public String getName() {
         return "RNSVGSvgViewManager";

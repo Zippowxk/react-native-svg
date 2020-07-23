@@ -1187,8 +1187,8 @@ class TSpanView extends TextView {
             }
         }
 
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
-            typeface = Typeface.create(typeface, weight, isItalic);
+        if (Build.VERSION.SDK_INT >= 10) {
+            typeface = Typeface.create(typeface, weight);
         }
 
         paint.setLinearText(true);

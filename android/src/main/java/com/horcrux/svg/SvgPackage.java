@@ -25,9 +25,9 @@ import static com.horcrux.svg.RenderableViewManager.*;
 
 public class SvgPackage implements ReactPackage {
 
-    @Nonnull
+    
     @Override
-    public List<ViewManager> createViewManagers(@Nonnull ReactApplicationContext reactContext) {
+    public List<ViewManager> createViewManagers( ReactApplicationContext reactContext) {
         return Arrays.<ViewManager>asList(
                 new GroupViewManager(),
                 new PathViewManager(),
@@ -52,9 +52,9 @@ public class SvgPackage implements ReactPackage {
                 new SvgViewManager());
     }
 
-    @Nonnull
+    
     @Override
-    public List<NativeModule> createNativeModules(@Nonnull ReactApplicationContext reactContext) {
+    public List<NativeModule> createNativeModules( ReactApplicationContext reactContext) {
         return Arrays.<NativeModule>asList(
                 new SvgViewModule(reactContext),
                 new RNSVGRenderableManager(reactContext)

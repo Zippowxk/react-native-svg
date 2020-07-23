@@ -166,7 +166,7 @@ class ImageView extends RenderableView {
         dataSource.subscribe(subscriber, UiThreadImmediateExecutorService.getInstance());
     }
 
-    @Nonnull
+    
     private RectF getRect() {
         double x = relativeOnWidth(mX);
         double y = relativeOnHeight(mY);
